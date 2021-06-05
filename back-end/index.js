@@ -6,7 +6,7 @@ const DB_PATH = path.join(__dirname,'data.json');
 
 const server = http.createServer((req,res)=>{
     res.setHeader("Access-Control-Allow-Origin", "*");
-    if(req.url === '/chat'){
+    if(req.url === '/add'){
         if(req.method === 'GET'){
             fs.readFile(DB_PATH,(err,data)=>{
                 if(err){
