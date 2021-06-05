@@ -2,7 +2,7 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
-const DB_PATH = path.join(__dirname,'back-end','data.json');
+const DB_PATH = path.join(__dirname,'data.json');
 
 const server = http.createServer((req,res)=>{
     res.setHeader("Access-Control-Allow-Origin", "*");
@@ -28,7 +28,11 @@ const server = http.createServer((req,res)=>{
                 text += chunk;
             });
             req.on("end",()=>{
-                fs.appendFile(DB_PATH, "\n" +text,()=>{});
+                let db = fs.readFileSync(DB_PATH,(err)=>{console.log(err)});
+                let news = JSON.parse(text);
+                db = JSON.parse(text);
+                db.push(news);
+                fs.writeFile(DB_PATH,db);
                 res.writeHead(201);
                 res.end();
             })            
