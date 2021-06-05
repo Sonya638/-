@@ -1,10 +1,10 @@
-const url = 'http://localhost:5500/-';
+const url = 'http://localhost:5500/add';
 let xhr = new XMLHttpRequest();
 xhr.open('GET', url);
 xhr.onload = () => {
-    let chat = document.getElementById("chat");
+    let news = document.getElementById("news");
     let res = xhr.response;
-    chat.innerHTML = `
+    news.innerHTML = `
      ${res}
     `
   }
@@ -14,7 +14,7 @@ xhr.onload = () => {
 function send(){
   let xhr = new XMLHttpRequest();
   xhr.open('POST', url);
-  let msg = document.getElementById("message").value;
+  let add = document.getElementById("add").value;
   xhr.send(msg);
 }
 
