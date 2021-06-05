@@ -15,6 +15,6 @@ function send(){
   let xhr = new XMLHttpRequest();
   xhr.open('POST', url);
   let add = document.getElementById("add").value;
-  xhr.send(msg);
+  xhr.send(add);
 }
 
