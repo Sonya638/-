@@ -5,7 +5,14 @@ xhr.onload = () => {
     let news = document.getElementById("news");
     let res = xhr.response;
     news.innerHTML = `
-     ${res}
+    <td class="td1"><div class="card"  style="width: 18rem;">
+    <img class="card-img-top" src="${res.img}" alt="Card image cap">
+    <div class="card-body">
+       <li class="list-group-item"><b>${res.name}</b></li>
+      <p class="card-text">${res.about}</p>
+    </div>
+  </div>
+</td>
     `
   }
 
@@ -14,7 +21,10 @@ xhr.onload = () => {
 function send(){
   let xhr = new XMLHttpRequest();
   xhr.open('POST', url);
-  let add = document.getElementById("add").value;
+  let news = {
+    content: document.getElementById("add").value,
+
+  }
   xhr.send(add);
 }
 
