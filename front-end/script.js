@@ -4,7 +4,8 @@ xhr.open('GET', url);
 xhr.onload = () => {
     let news = document.getElementById("news");
     let res = xhr.response;
-    res.forEach(res => {
+    console.log(res)
+    res.map(res => {
       news.innerHTML += `
       <td class="td1"><div class="card"  style="width: 18rem;">
       <img class="card-img-top" src="${res.img}" alt="Card image cap">
