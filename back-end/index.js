@@ -30,7 +30,7 @@ const server = http.createServer((req,res)=>{
             req.on("end",()=>{
                 let db = fs.readFileSync(DB_PATH,(err)=>{console.log(err)});
                 let news = JSON.parse(text);
-                db = JSON.parse(text);
+                let db = JSON.parse(text);
                 db.push(news);
                 fs.writeFile(DB_PATH,db);
                 res.writeHead(201);
