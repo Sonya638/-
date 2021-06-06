@@ -25,10 +25,10 @@ function send(){
   xhr.open('POST', url);
   let news ={
     content: document.getElementById("add").value,
-    name: document.getElementById("add").value,
-    img: document.getElementById("add").value,
-    about: document.getElementById("add").value,
+    name: document.getElementById("name").value,
+    img: document.getElementById("img").value,
+    about: document.getElementById("about").value,
   } 
-  xhr.send(add);
+  xhr.send(news);
 }
 
