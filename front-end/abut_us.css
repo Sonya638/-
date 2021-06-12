@@ -25,6 +25,12 @@ a {
     position: static;
 }
 
+.content{
+    margin: 4em;
+    background-color: #fff;
+    padding: 30px
+}
+
 
 
 
