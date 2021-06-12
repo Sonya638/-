@@ -120,6 +120,11 @@ border-bottom: 2px solid black;
     height: 0px;
    
 }
+.email{
+    display: inline-flex;
+    justify-content: flex-end;
+
+}
 .int{
     display: flex;
     align-content: center;
