@@ -19,18 +19,28 @@ body {
     margin-right:30px; 
 }
 
-.table {
-    width: 1000px;
-    margin: auto; 
-    border-spacing: 7px 7px;
-   
-   }
-   .td1 {
-    text-align: center;
-    width: 239px;
-    height: 341px;
-    
+.grid{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    margin-bottom: 40px;
+    margin-left: 163px; 
 }
+.card{
+    margin-bottom: 30px;
+
+}
+
+/* .grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+} */
+
 .nav-item{
     margin-right:50px;
 }
@@ -43,7 +53,9 @@ li a:hover {
     width: 100%;
 }
 
-
+.header{
+    position: static!important;
+}
 
 .card-img-top{
     width: 286px;
@@ -87,10 +99,12 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .footer{
     background-color: #fff;
+    height:200px;
     
 }
 .con{
@@ -100,6 +114,7 @@ justify-content: center;
 border-bottom: 2px solid black;
 }
 .contact{
+    margin-top: 20px;
     margin-left: 120px;
     width: 175px;
     height: 0px;
