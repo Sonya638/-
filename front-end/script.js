@@ -3,7 +3,7 @@ let xhr = new XMLHttpRequest();
 xhr.open('GET', url);
 xhr.onload = () => {
     let news = document.getElementById("news");
-    let res = xhr.response;
+    let res = JSON.parse(xhr.response);
     console.log(res)
     res.map(res => {
       news.innerHTML += `

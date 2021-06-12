@@ -32,7 +32,7 @@ const server = http.createServer((req,res)=>{
                 let news = JSON.parse(text);
                 db = JSON.parse(db);
                 db.push(news);
-                fs.writeFile(DB_PATH,db);
+                fs.writeFile(DB_PATH,JSON.stringify(db));
                 res.writeHead(201);
                 res.end();
             })            
