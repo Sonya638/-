@@ -27,6 +27,7 @@ function send(){
     name: document.getElementById("name").value,
     about: document.getElementById("about").value,
   } 
-  xhr.send(news);//Отправляете белеберду. Перед отправкой нужно сделать JSON.stringify(news)
+  
+  xhr.send(JSON.stringify(news));//Отправляете белеберду. Перед отправкой нужно сделать JSON.stringify(news)
 }
 
