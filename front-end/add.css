@@ -1,3 +1,57 @@
 .news{
     margin-top: 900px;
 }
+
+form{
+    background-color: #fff;
+    height: 400px;
+    width: 400px;
+    border-radius: 25px;
+    margin-left: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+legend{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 200%;
+
+}
+
+.oh{
+   margin-top: 20px;
+   margin-left: 90px;
+   
+}
+.oho{
+margin-top: 20px;
+margin-left: 90px;
+
+}
+label{
+font-size: 150%;
+}
+
+.aa{
+margin-top:60px;
+display: flex;
+justify-content: flex-end;
+margin-left: 270px;
+}
+
+.grid2{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    margin-bottom: 40px;
+    margin-left: 163px; 
+}
+
+.content{
+    background-color: rgba(255,255,255,0.7);
+    padding: 30px;
+    border-radius: 25px;
+    margin-top: 100px;
+}
