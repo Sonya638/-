@@ -26,6 +26,7 @@ function send(){
   let news ={
     name: document.getElementById("name").value,
     about: document.getElementById("about").value,
+    img: document.getElementById("img").value
   } 
   
   xhr.send(JSON.stringify(news));//Отправляете белеберду. Перед отправкой нужно сделать JSON.stringify(news)
